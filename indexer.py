@@ -15,7 +15,7 @@ embeddings = HuggingFaceEmbeddings(
 )
 
 # File path
-input_file = r"G:\Meine Ablage\Documentos\Projects\App-Suite\Religion_App\LLM-Models\Texts\Bibel_new.txt"
+input_file = r""
 
 # Load verses from .txt file
 with open(input_file, 'r', encoding='UTF-8') as f:
@@ -69,7 +69,7 @@ texts = [json.dumps(entry, ensure_ascii=False) for entry in chunks]
 doc_store = QdrantVectorStore.from_texts(
     texts,
     embeddings,
-    url="https://1603c347-3ae3-41e1-9607-40d5d9aacbeb.us-east4-0.gcp.cloud.qdrant.io",
-    api_key="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3MiOiJtIn0.tG4fNFZHtTw2ndjsW0BoFAx-vtP0PJYqnDkP0-p4oSo",
+    url="",
+    api_key="",
     collection_name="Bible Chunks",
 )
