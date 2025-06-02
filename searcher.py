@@ -19,8 +19,8 @@ embeddings = HuggingFaceEmbeddings(
 vector_store_bible = QdrantVectorStore.from_existing_collection(
     embedding=embeddings,
     collection_name="Bible Chunks",
-    url="https://1603c347-3ae3-41e1-9607-40d5d9aacbeb.us-east4-0.gcp.cloud.qdrant.io",
-    api_key="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3MiOiJtIn0.tG4fNFZHtTw2ndjsW0BoFAx-vtP0PJYqnDkP0-p4oSo",
+    url="",
+    api_key="",
 )
 
 # Retrievers
